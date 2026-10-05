@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body>
+    <h1>Pokemon</h1>
+
+    <div class="cenario">
+        <div class="textos">
+            <h5 id="pontos">Pontos: <span id="valorPontos">0</span></h5>
+            <h5 id="recorde">Recorde: <span id="valorRecord">0</span></h5>
+            <h5 id="velocidadeTexto">Velocidade: <span id="valorVelocidade">10</span></h5>
+            <div id="vidas">
+                <img id="pokebola1" src="assets/img/pokebolas.png">
+                <img id="pokebola2" src="assets/img/pokebolas.png">
+                <img id="pokebola3" src="assets/img/pokebolas.png">
+            </div>
+        </div>
+
+        <h3 id="aviso"></h3>
+
+        <div id="jogador"></div>
+        <div id="jogadorEvoluido"></div>
+
+        <div id="vilao"></div>
+        <div id="necrozma"></div>
+        <div id="guzzlord"></div>
+        <div id="malamar"></div>
+
+        <div class="tela" id="telaInicio">
+            <h2>POKEMON</h2>
+            <p>Aperte ENTER para começar</p>
+            <p>ESPAÇO pula. Com 50 pontos você libera o pulo duplo</p>
+        </div>
+
+        <div class="tela" id="telaFim">
+            <img src="assets/img/game_over.png">
+            <h2>GAME OVER</h2>
+            <p>Pontos: <span id="pontosFinal">0</span></p>
+            <p>Aperte ENTER para jogar de novo</p>
+        </div>
+    </div>
+
+    <audio id="musicaTema" src="assets/audio/musica_tema_do_jogo_pokemon.mp3" loop></audio>
+    <audio id="somDano" src="assets/audio/pokemon_toma_dano.mp3"></audio>
+    <audio id="somMorte" src="assets/audio/pokemon_morre.mp3"></audio>
+
+    <script src="assets/js/jogo.js" defer></script>
+</body>
+</html>
